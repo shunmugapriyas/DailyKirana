@@ -1,0 +1,18 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: penn-selavu-tracker-api
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/penn_selavu_tracker}
+
+app:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:8081,http://localhost:19006}
+  otp:
+    ttl-minutes: ${OTP_TTL_MINUTES:5}
+    dev-mode: ${OTP_DEV_MODE:false}
+  session:
+    ttl-days: ${SESSION_TTL_DAYS:30}

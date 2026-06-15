@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/penn_selavu_tracker_dev}
+
+app:
+  otp:
+    dev-mode: true
